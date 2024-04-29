@@ -102,7 +102,7 @@ function fetchData(data) {
 }
 // Delete Student
 function delet(id) {
-    if (confirm("Delete employee")) {
+    if (confirm("Delete Student !")) {
         let persons = JSON.parse(localStorage.getItem("persons") || "[]");
         let updatedPersons = persons.filter((el) => el.id !== id);
         localStorage.setItem("persons", JSON.stringify(updatedPersons));
